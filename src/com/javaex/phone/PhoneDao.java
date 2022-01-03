@@ -78,9 +78,6 @@ public class PhoneDao {
 
 			int count = pstmt.executeUpdate();
 
-			// 4.결과처리
-			System.out.println(count + "건이 저장되었습니다.");
-
 		} catch (SQLException e) {
 			System.out.println("error:" + e);
 		}
@@ -142,8 +139,6 @@ public class PhoneDao {
 			pstmt.setInt(4, phoneVo.getPersonId());
 
 			int count = pstmt.executeUpdate();
-
-			System.out.println(count + "건이 수정되었습니다.");
 
 		} catch (SQLException e) {
 			System.out.println("error:" + e);
